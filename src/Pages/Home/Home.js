@@ -7,7 +7,9 @@ class Home extends Component{
         return (
             <div>
                 <h2>Welcome to Colton's Portfolio</h2>
-                <p>For starters, Unity WebGL builds currently don't play well with touchscreens. Because of this I currently don't have anything for phones, but stay tuned!</p>
+                <p>I am currently building my portfolio. This means that lots of content is missing. I do not have the unity game hooked up to the react app, but I have created the unity game that is going to be the center of the portfolio. I am planning on making it so that if you drive the tank past one of the walls it will lead you to a different page on this app. Please come back once I have hooked that up!</p>
+                <p>Thanks,</p>
+                <p>Colton</p>
                 <Link to="/desktop">
                     <button>Mouse and Keyboard</button>
                 </Link>
