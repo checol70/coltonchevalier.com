@@ -11,7 +11,6 @@ class Home extends Component{
                 <p>Thanks,</p>
                 <p>Colton</p>
                 <h3>Instructions</h3>
-                <p>Currently Left click is HE, but will be changing soon.</p>
                 <p>Left Click: Fire Armor Piercing</p>
                 <p>Right Click: Fire High Explosive</p>
                 <p>WASD keys: drive the tank</p>
@@ -19,10 +18,10 @@ class Home extends Component{
                 <p>To see content: Drive past initial wall placement. will bring you to react pages, or links to external pages.</p>
 
                 <Link to="/desktop">
-                    <button>Mouse and Keyboard</button>
+                    <button>Drive the Tank!</button>
                 </Link>
                 <Link to="/mobile">
-                    <button disabled="true">Touchscreen</button>
+                    <button disabled="true">Just show me the words.</button>
                 </Link>
             </div>
         )
