@@ -4,22 +4,28 @@ import Unity, { UnityContent } from "react-unity-webgl";
 
 class Desktop extends Component{
     state = {
-        unityContent :  new UnityContent(
-            "MyGame/Build/MyGame.json",
-            "MyGame/Build/UnityLoader.js"
-            )
     }
+    unityContent =  new UnityContent(
+        "MyGame/Build/MyGame.json",
+        "MyGame/Build/UnityLoader.js"
+    )
     exit = (place)=>{
-        console.log("tried running it")
+        console.log("Called");
         console.log(place)
-        console.log(this.props.history)
         this.props.history.push(place);
     }
+    setup = ()=>{
+        this.unityContent.on("exit", (str)=>{
+            console.log(typeof str) 
+            this.exit(str)
+        })
+    }
+    
     render(){
         return (
             <div>
-                <Unity unityContent={this.state.unityContent}/>
-                <button onClick = {()=>{this.exit("/")}}>tryit</button>
+            {this.setup()}
+                <Unity unityContent={this.unityContent}/>
             </div>
         )
     }
