@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Container from "./Components/Container";
 import Home from "./Pages/Home"
@@ -14,6 +14,7 @@ function App() {
                 <Route exact path="/" component={Home} />
                 <Route exact path="/desktop" component = {Desktop}/>
                 {/*<Route component={noMatch}/>*/}
+                
               </Switch>
             </div>
           </BrowserRouter>

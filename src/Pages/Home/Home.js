@@ -21,7 +21,7 @@ class Home extends Component{
                     <button>Drive the Tank!</button>
                 </Link>
                 <Link to="/mobile">
-                    <button disabled="true">Just show me the words.</button>
+                    <button disabled={true}>Just show me the words.</button>
                 </Link>
             </div>
         )
