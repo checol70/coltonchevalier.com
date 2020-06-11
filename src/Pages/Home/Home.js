@@ -16,7 +16,7 @@ class Home extends Component{
                 <p>WASD keys: drive the tank</p>
                 <p>ESC/CTRL: Unlock Mouse Cursor</p>
                 <p>To see content: Drive past initial wall placement. will bring you to react pages, or links to external pages.</p>
-                <p>Currently driving outside the brick walls will redirect you to this page. I think this is amazingly awesome!</p>
+                <p>Currently driving outside the brick walls will redirect you to this page. I think this is amazingly awesome! I also found a way to make the game slightly responsive(it only does width)</p>
 
                 <Link to="/desktop">
                     <button>Drive the Tank!</button>
